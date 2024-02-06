@@ -17,7 +17,16 @@ const Alphabet = ({}: AlphabetProps) => {
     try {
       const options = {
         method: "GET",
-        url: `https://wordsapiv1.p.rapidapi.com/words/${query}`,
+        url: `https://wordsapiv1.p.rapidapi.com/words/${
+          query ? query : abc[current]
+        }`,
+        params: {
+          letterPattern: "^a.{4}$",
+          pronunciationpattern: ".*æm$",
+          limit: "100",
+          page: "1",
+          hasDetails: "hasDetails",
+        },
         headers: {
           "X-RapidAPI-Key":
             "07de9a7c77msha015ee42827191ep1af300jsn8e1008c50bf1",
