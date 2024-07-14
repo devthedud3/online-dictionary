@@ -19,7 +19,7 @@ Welcome to the Online Dictionary project! This web application provides a conven
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/online-dictionary.git
+   git clone https://github.com/devthedud3/online-dictionary.git
    ```
 
 2. Navigate to the project directory:
