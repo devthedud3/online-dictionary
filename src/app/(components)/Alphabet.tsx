@@ -9,26 +9,6 @@ type AlphabetProps = {
 
 const Alphabet: React.FC<AlphabetProps> = ({ words }) => {
   const aZ = "#abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
-  const [query, setQuery] = useState<string>(aZ[0]);
-  const [data, setData] = useState<any>([]);
-  const [current, setCurrent] = useState<number>(0);
-
-  // useEffect(() => {
-  //   const fetchData = async () => {
-  //     if (query) {
-  //       try {
-  //         const { data } = await axios.get(
-  //           `https://api.dictionaryapi.dev/api/v2/entries/en/${query.toLowerCase()}`
-  //         );
-  //         setData(data);
-  //       } catch (error) {
-  //         setData([]);
-  //         console.error("Error fetching data:", error);
-  //       }
-  //     }
-  //   };
-  //   fetchData();
-  // }, [query]);
 
   return (
     <div className="flex flex-col">
@@ -36,7 +16,7 @@ const Alphabet: React.FC<AlphabetProps> = ({ words }) => {
         const groupedWords = words.filter((word) => word.startsWith(letter));
         return (
           <section
-            key={index}
+            key={`${letter}-${index}`}
             id={`letter-${letter}`}
             className={`w-full justify-between py-24 ${
               index !== aZ.length - 1 && "border-b"
@@ -52,6 +32,7 @@ const Alphabet: React.FC<AlphabetProps> = ({ words }) => {
               {groupedWords.length > 0 ? (
                 groupedWords.map((word) => (
                   <Link
+                    key={word}
                     href={`/${word.toLocaleLowerCase()}`}
                     className="group w-fit"
                   >
