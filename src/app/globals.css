@@ -2,14 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+
+:root{
+    --primary: rgb(61, 161, 61);
+
+
+}
+
 html{
     display: flex;
     justify-content: center;
     font-family: Berkeley Mono, monospace;
     text-rendering: optimizespeed;
     -webkit-font-smoothing: antialiased;
+    background: black;
 }
 
 body {
     max-width: 1700px;
+    color: white
 }
