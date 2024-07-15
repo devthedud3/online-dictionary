@@ -6,7 +6,7 @@ type Props = {};
 
 export default function Nav({}: Props) {
   return (
-    <div className="w-full flex border-b border-zinc-700 items-center justify-between text-sm lg:flex px-24">
+    <div className="w-full flex border-b border-zinc-700 items-center justify-between text-sm lg:flex px-6">
       <Link
         href="/"
         className="flex w-full justify-center p-8 text-xl font-black text-nowrap"
