@@ -16,16 +16,16 @@ export const Search = ({ returnValue }: SearchProps) => {
   }
 
   return (
-    <div className="flex mb-6 text-md font-semibold space-x-1">
+    <div className="flex text-md font-semibold space-x-1 w-[350px] lg:w-[1000px] overflow-x-scroll">
       {aZ.map((val, idx) => (
         <div
           key={idx}
           onClick={() => handleClick(idx)}
-          className={`px-2 ${
+          className={`px-2 transition ${
             val === letter
-              ? "bg-rose-500 text-white border-rose-500"
-              : "border-white"
-          } rounded hover:border-rose-500 border-2 cursor-pointer mb-3 font-semibold`}
+              ? "bg-[--primary] text-white border-[--primary]"
+              : "border-black"
+          } rounded hover:border-[--primary] border-2 cursor-pointer mb-3 font-semibold`}
         >
           <h2>{val}</h2>
         </div>
