@@ -11,14 +11,14 @@ const Alphabet: React.FC<AlphabetProps> = ({ words }) => {
   const aZ = "#abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
 
   return (
-    <div className="flex flex-col">
+    <div className="">
       {aZ.map((letter, index) => {
         const groupedWords = words.filter((word) => word.startsWith(letter));
         return (
           <section
             key={`${letter}-${index}`}
             id={`letter-${letter}`}
-            className={`w-full justify-between py-24 ${
+            className={`w-full justify-between px-10 py-24 ${
               index !== aZ.length - 1 && "border-b"
             } border-zinc-700 grid lg:grid-cols-4`}
           >
