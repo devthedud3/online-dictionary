@@ -6,12 +6,15 @@ type Props = {};
 
 export default function Nav({}: Props) {
   return (
-    <div className="w-full flex border-b border-black items-center justify-between text-sm lg:flex px-24">
-      <p className="flex w-full justify-center p-8 text-xl font-black">
-        Online Dictionary&nbsp;
-      </p>
+    <div className="w-full flex border-b border-zinc-700 items-center justify-between text-sm lg:flex px-24">
       <Link
-        className="animate-pulse"
+        href="/"
+        className="flex w-full justify-center p-8 text-xl font-black text-nowrap"
+      >
+        The Glossary&nbsp;
+      </Link>
+      <Link
+        className="animate-pulse hidden md:block"
         href="https://github.com/devthedud3/online-dictionary"
         target="_blank"
       >
