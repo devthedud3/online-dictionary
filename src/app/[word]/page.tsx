@@ -7,7 +7,7 @@ type Props = {
 };
 
 export default function Page({ params: { word } }: { params: Props }) {
-  const [details, setDetails] = useState([]);
+  const [details, setDetails] = useState<any>([]);
   const [definition, setDefinition] = useState([]);
 
   useEffect(() => {
@@ -30,9 +30,9 @@ export default function Page({ params: { word } }: { params: Props }) {
       <div className="flex flex-col justify-center p-40 pt-0 w-screen space-y-4">
         <h1 className="text-3xl border-b py-6">
           {word}
-          <span className="text-xl font-black"> {details?.phonetic}</span>
+          <span className="text-xl font-black"> {details?.phonetic || ""}</span>
         </h1>
-        {definition.map((obj, index) => (
+        {definition.map((obj: any, index) => (
           <p key={index} className="text-sm pb-4">
             {obj?.definition}
           </p>
