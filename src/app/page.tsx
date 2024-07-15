@@ -1,6 +1,6 @@
 import React from "react";
-import Alphabet from "./components/Alphabet";
-import { Search } from "./components/Search";
+import Alphabet from "./(components)/Alphabet";
+import { Search } from "./(components)/Search";
 
 export default function Home() {
   return (
