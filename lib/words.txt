@@ -1,0 +1,117 @@
+Artificial Intelligence
+API
+Automation
+Bandwidth
+Blockchain
+Bluetooth
+Browser
+Cache
+Cloud Computing
+Cybersecurity
+Database
+Data Mining
+DevOps
+DNS
+Encryption
+Ethernet
+Firewall
+Firmware
+GPU
+HTML
+HTTP
+HTTPS
+IoT
+IP Address
+JavaScript
+JSON
+Kernel
+Kubernetes
+Load Balancer
+Machine Learning
+Malware
+Microservices
+Network
+Node.js
+OAuth
+Open Source
+Operating System
+Packet
+Protocol
+Python
+Quantum Computing
+Query
+RAM
+Router
+SaaS
+SDK
+Server
+SQL
+SSL/TLS
+Storage
+TCP/IP
+Token
+UI/UX
+USB
+Virtual Machine
+VPN
+WAN
+Web Server
+Wi-Fi
+XML
+YAML
+Zero Trust
+A/B Testing
+Agile
+Algorithm
+Analytics
+Antivirus
+Augmented Reality
+Big Data
+Biometrics
+Botnet
+CDN (Content Delivery Network)
+CLI (Command Line Interface)
+CI/CD (Continuous Integration/Continuous Deployment)
+Containerization
+Cookie
+Cryptography
+CSS
+Data Lake
+Data Science
+Deep Learning
+Distributed Systems
+DDoS (Distributed Denial of Service)
+Edge Computing
+Frontend
+GIS (Geographic Information System)
+Hash Function
+Hybrid Cloud
+IDE (Integrated Development Environment)
+Indexing
+Infrastructure as Code (IaC)
+IPFS (InterPlanetary File System)
+ITIL (Information Technology Infrastructure Library)
+Java
+Jenkins
+Latency
+Load Testing
+Log Management
+Middleware
+Microcontroller
+MongoDB
+Multithreading
+Natural Language Processing (NLP)
+Neural Network
+Nginx
+NoSQL
+OAuth2
+ORM (Object-Relational Mapping)
+PaaS (Platform as a Service)
+Penetration Testing
+Phishing
+Proxy
+React
+Redis
+Regression Testing
+Remote Desktop
+REST API
