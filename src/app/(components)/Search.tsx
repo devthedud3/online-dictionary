@@ -1,46 +1,35 @@
 "use client";
 import React, { useState } from "react";
-import { Box, Button, TextField } from "@mui/material";
 
 type SearchProps = {
-  returnValue: (e: any) => void;
+  returnValue?: (e: any) => void;
 };
 
 export const Search = ({ returnValue }: SearchProps) => {
-  const [search, setSearch] = useState<string>("");
+  const aZ = "#abcdefghijklmnopqrstuvwxyz".toUpperCase().split("");
+  const [letter, setLetter] = useState("#");
 
-  const handleChange = (e: any) => {
-    e.preventDefault();
-    const { value } = e.target;
-    setSearch(value);
-  };
+  function handleClick(n: number) {
+    setLetter(aZ[n]);
+    const section = document.getElementById(`letter-${aZ[n]}`);
+    section && section.scrollIntoView({ behavior: "smooth" });
+  }
 
-  const onSubmit = () => {
-    returnValue(search);
-  };
   return (
-    <div className="w-full">
-      <Box
-        component="form"
-        onChange={handleChange}
-        className={`flex items-center flex-row mb-3`}
-      >
-        <TextField
-          className={` rounded`}
-          id="outlined-basic"
-          label="Search by query or definition"
-          name="Animal"
-          fullWidth
-          value={search}
-          variant="outlined"
-        />
+    <div className="flex mb-6 text-md font-semibold space-x-1">
+      {aZ.map((val, idx) => (
         <div
-          className="border cursor-pointer p-4 ml-3 rounded bg-black text-white hover:bg-gray-800 transition-transform "
-          onClick={onSubmit}
+          key={idx}
+          onClick={() => handleClick(idx)}
+          className={`px-2 ${
+            val === letter
+              ? "bg-rose-500 text-white border-rose-500"
+              : "border-white"
+          } rounded hover:border-rose-500 border-2 cursor-pointer mb-3 font-semibold`}
         >
-          Search
+          <h2>{val}</h2>
         </div>
-      </Box>
+      ))}
     </div>
   );
 };
