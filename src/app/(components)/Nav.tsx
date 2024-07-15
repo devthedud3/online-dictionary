@@ -12,7 +12,7 @@ export default function Nav({}: Props) {
       </p>
       <Link
         className="animate-pulse"
-        href="https://github.com/devthedud3"
+        href="https://github.com/devthedud3/online-dictionary"
         target="_blank"
       >
         <BsGithub size={35} />
