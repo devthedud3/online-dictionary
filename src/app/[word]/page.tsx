@@ -12,11 +12,9 @@ export default function Page({ params: { word } }: { params: Props }) {
 
   useEffect(() => {
     async function GetDefinition() {
-      console.log("theheh", word);
       const { data } = await axios.get(
         `https://api.dictionaryapi.dev/api/v2/entries/en/${word.toLowerCase()}`
       );
-
       setDetails(data[0]);
       setDefinition(data[0].meanings[0].definitions);
       try {
@@ -25,7 +23,7 @@ export default function Page({ params: { word } }: { params: Props }) {
       }
     }
     GetDefinition();
-  }, []);
+  });
 
   return (
     details && (
