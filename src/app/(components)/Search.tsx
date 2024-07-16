@@ -23,7 +23,7 @@ export const Search = ({ returnValue }: SearchProps) => {
           onClick={() => handleClick(idx)}
           className={`px-2 transition ${
             val === letter
-              ? "bg-[--primary] text-white border-[--primary]"
+              ? "bg-[--primary] text-black border-[--primary]"
               : "border-black"
           } rounded hover:border-[--primary] border-2 cursor-pointer mb-3 font-semibold`}
         >
