@@ -6,10 +6,10 @@ type Props = {};
 
 export default function Nav({}: Props) {
   return (
-    <div className="w-full border-b border-zinc-700 items-center justify-between text-sm lg:flex ">
+    <div className="w-full border-b border-zinc-700 items-center p-8 justify-between text-sm lg:flex ">
       <Link
         href="/"
-        className="flex w-full justify-center py-8 text-xl font-black text-nowrap"
+        className="flex w-full justify-center items-center  text-xl font-black text-nowrap"
       >
         The Glossary&nbsp;
       </Link>
