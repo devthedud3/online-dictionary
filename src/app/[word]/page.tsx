@@ -27,8 +27,8 @@ export default function Page({ params: { word } }: { params: Props }) {
 
   return (
     details && (
-      <div className="flex flex-col items-center justify-center p-10 lg:p-10 pt-0 w-screen space-y-4">
-        <h1 className="text-3xl border-b border-zinc-700 w-full text-center py-6">
+      <div className="flex flex-col justify-center p-10 lg:p-10 pt-0 w-screen space-y-4">
+        <h1 className="text-3xl border-b border-zinc-700 w-full text-left py-6">
           {newWord}
           <span className="text-xl font-black"> {details?.phonetic || ""}</span>
         </h1>
